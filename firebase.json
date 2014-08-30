@@ -1,0 +1,9 @@
+{
+  "firebase": "harrypotter",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    ".*",
+    "**/node_modules/**"
+  ]
+}

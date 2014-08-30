@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Gotham Light';
+  src: url("fonts/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Harry';
+  src: url("fonts/harry.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: 'Lumos';
+  src: url("fonts/lumos.TTF") format("truetype");
+}
+
+
+#header {
+  text-align: center;
+  font-family: 'Harry';
+  font-size: 60px;
+}
+
+body {
+  font-family: 'Gotham Light';
+}
+
+.book {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, .3);
+  width: 320px;
+/*  height: 440px;*/
+}
+
+.book img {
+  display: block;
+  margin: auto;
+}
+
+.title, .date, .cost {
+  margin: 10px;
+}
+
+.title {
+  text-align: center;
+  font-family: "Gotham Bold";
+  font-size: 25px;
+}
+
+.date, .cost {
+  margin-top: 25px;
+  font-size: 20px;  
+}
+
+.date {
+  float: right;
+
+}
+
+.cost {
+  float: left;
+
+  color: #33cd7b;
+  font-family: "Gotham Bold";
+}
+
+.covers {
+  width: 170px;
+/*  float: left;*/
+}
