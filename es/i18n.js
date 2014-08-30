@@ -10,9 +10,9 @@ i18n["cost"]={
 "cost":function(d){return "5"},
 "currency":function(d){return "EUR"}}
 i18n["covers"]={
-"one":function(d){return "covers/es-1.jpg"},
-"two":function(d){return "covers/es-2.jpg"},
-"three":function(d){return "covers/es-3.jpg"}}
+"one":function(d){return "css/covers/es-1.jpg"},
+"two":function(d){return "css/covers/es-2.jpg"},
+"three":function(d){return "css/covers/es-3.jpg"}}
 i18n["titles"]={
 "one":function(d){return "Harry Potter y la Piedra Filosofal"},
 "two":function(d){return "Harry Potter y la Camara Secreta"},

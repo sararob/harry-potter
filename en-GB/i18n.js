@@ -10,9 +10,9 @@ i18n["cost"]={
 "cost":function(d){return "4"},
 "currency":function(d){return "GBP"}}
 i18n["covers"]={
-"one":function(d){return "covers/gb-1.jpg"},
-"two":function(d){return "covers/gb-2.jpg"},
-"three":function(d){return "covers/gb-3.jpg"}}
+"one":function(d){return "css/covers/gb-1.jpg"},
+"two":function(d){return "css/covers/gb-2.jpg"},
+"three":function(d){return "css/covers/gb-3.jpg"}}
 i18n["titles"]={
 "one":function(d){return "Harry Potter and the Philosopher's Stone"},
 "two":function(d){return "Harry Potter and the Chamber of Secrets"},

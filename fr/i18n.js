@@ -10,9 +10,9 @@ i18n["cost"]={
 "cost":function(d){return "5"},
 "currency":function(d){return "EUR"}}
 i18n["covers"]={
-"one":function(d){return "covers/fr-1.jpg"},
-"two":function(d){return "covers/fr-2.jpg"},
-"three":function(d){return "covers/fr-3.jpg"}}
+"one":function(d){return "css/covers/fr-1.jpg"},
+"two":function(d){return "css/covers/fr-2.jpg"},
+"three":function(d){return "css/covers/fr-3.jpg"}}
 i18n["titles"]={
 "one":function(d){return "Harry Potter A L'Ecole des Sorciers"},
 "two":function(d){return "Harry Potter Et la Chambre des Secrets"},
