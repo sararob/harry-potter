@@ -27,6 +27,11 @@
 
 body {
   font-family: 'Gotham Light';
+/*  background-color: lightgrey;*/
+}
+
+#content {
+  text-align: center;
 }
 
 .book {
@@ -72,5 +77,41 @@ body {
 
 .covers {
   width: 170px;
-/*  float: left;*/
+}
+
+.lang {
+  width: 50px;
+  height: 35px;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.us {
+  /*background: url('flags/us.png');*/
+}
+
+.de {
+  background: url('flags/de.png') no-repeat;
+}
+
+.fr {
+  background: url('flags/fr.png') no-repeat;
+}
+
+.en-gb {
+  background: url('flags/gb.png') no-repeat;
+}
+
+.us {
+  background: url('flags/us.png') no-repeat;
+}
+
+.es {
+  background: url('flags/es.png') no-repeat;
 }

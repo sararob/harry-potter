@@ -10,9 +10,9 @@ i18n["cost"]={
 "cost":function(d){return "5"},
 "currency":function(d){return "EUR"}}
 i18n["covers"]={
-"one":function(d){return "covers/de-1.jpg"},
-"two":function(d){return "covers/de-2.jpg"},
-"three":function(d){return "covers/de-3.jpg"}}
+"one":function(d){return "css/covers/de-1.jpg"},
+"two":function(d){return "css/covers/de-2.jpg"},
+"three":function(d){return "css/covers/de-3.jpg"}}
 i18n["titles"]={
 "one":function(d){return "Harry Potter Und der Stein der Weisen"},
 "two":function(d){return "Harry Potter Und die Kammer des Schreckens"},
