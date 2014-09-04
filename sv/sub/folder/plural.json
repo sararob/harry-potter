@@ -1,0 +1,3 @@
+{
+  "text": "You've read {NUM_BOOKS, plural, one{one book} other{# books}}."
+}

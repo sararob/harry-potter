@@ -7,7 +7,8 @@ $('input').click(function(e){
     location.reload();
 });
 
-var language = localStorage.getItem('lang');
+var language = localStorage.getItem('lang') || 'en-GB';
+moment.locale(language);
 
 //Dates the books were published
 var dates = {
@@ -15,8 +16,6 @@ var dates = {
   'two': 899347779, 
   'three': 931402179
 };
-
-moment.locale(language);
 
 //Get bookstore name
 $('<span>').text(window.i18n['bookstore'].store()).appendTo($('#header'));
@@ -32,7 +31,7 @@ for (var i in window.i18n['titles']) {
   $('<div class="book" id="book-' + i + '">').appendTo($('#content'));
 
   var title = (window.i18n['titles'][i])();
-  $('<div class="title">').text(title).appendTo($('#book-' + i));
+  $('<div class="title">').html(title).appendTo($('#book-' + i));
 
   var cover = (window.i18n['covers'][i])();
   $('<img class="cover">').attr({'src': cover, 'class': 'covers'}).appendTo($('#book-' + i));
