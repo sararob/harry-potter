@@ -7,37 +7,60 @@ $('input').click(function(e){
     location.reload();
 });
 
-var language = localStorage.getItem('lang') || 'en-GB';
+//Create a global language variable and set moment's global locale
+var language = localStorage
+  .getItem('lang') || 'en-GB';
 moment.locale(language);
 
-//Dates the books were published
+//Dates each book was published
 var dates = {
   'one': 867283200, 
   'two': 899347779, 
   'three': 931402179
 };
 
-//Get bookstore name
-$('<span>').text(window.i18n['bookstore'].store()).appendTo($('#header'));
+//Add bookstore name to header using MESSAGEFORMAT.JS
+$('<span>').text(
+  window.i18n['bookstore'].store())
+  .appendTo($('#header')
+);
 
 //Get cost
 var cost = parseInt(window.i18n['cost'].cost());
 var currency = window.i18n['cost'].currency();
-var formattedCost = cost.toLocaleString(language, {style: 'currency', currency: currency});
 
-//Get data for each book
+//Format the currency using the INTERNATIONALIZATION API
+var formattedCost = cost.toLocaleString(
+  language, {style: 'currency', currency: currency}
+);
+
+//Add data for each book
 for (var i in window.i18n['titles']) {
 
-  $('<div class="book" id="book-' + i + '">').appendTo($('#content'));
+  $('<div class="book" id="book-' + i + '">')
+    .appendTo($('#content'));
 
+  //Add the title and cover image using MESSAGEFORMAT.JS
   var title = (window.i18n['titles'][i])();
-  $('<div class="title">').html(title).appendTo($('#book-' + i));
+
+  $('<div class="title">')
+    .html(title)
+    .appendTo($('#book-' + i));
 
   var cover = (window.i18n['covers'][i])();
-  $('<img class="cover">').attr({'src': cover, 'class': 'covers'}).appendTo($('#book-' + i));
 
-  var formattedDate = moment(dates[i], "X").format("LL");
-  $('<div class="date">').text(formattedDate).appendTo($('#book-' + i));
+  $('<img class="cover">')
+    .attr({'src': cover, 'class': 'covers'})
+    .appendTo($('#book-' + i));
 
-  $('<div class="cost">').text(formattedCost).appendTo($('#book-' + i));
+  //Format the date using MOMENT.JS
+  var formattedDate = moment(dates[i], "X")
+    .format("LL");
+  $('<div class="date">')
+    .text(formattedDate)
+    .appendTo($('#book-' + i));
+
+  $('<div class="cost">')
+    .text(formattedCost)
+    .appendTo($('#book-' + i));
 }
